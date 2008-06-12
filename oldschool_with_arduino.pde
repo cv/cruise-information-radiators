@@ -1,9 +1,10 @@
-import ddf.minim.*;
+import ddf.minim.*;  // http://code.compartmental.net/tools/minim/
+import fullscreen.*; // http://www.superduper.org/processing/fullscreen_api/
+import cc.arduino.*; // http://www.arduino.cc/playground/Interfacing/Processing (you need an Arduino with Firmata running on it)
+
 import processing.core.*;
-import fullscreen.*;
 import processing.xml.*;
 import processing.serial.*;
-import cc.arduino.*;
 
 String PROJECT_NAME = "1c2f";
 String URL = "http://localhost:3333/projects/" + PROJECT_NAME + ".rss";
