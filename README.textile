@@ -1,0 +1,31 @@
+h1. CruiseControl Information Radiators
+
+This is a set of information radiators for CruiseControl(".java":http://cruisecontrol.sourceforge.net, ".net":http://confluence.public.thoughtworks.org/display/CCNET/Welcome+to+CruiseControl.NET or ".rb":http://cruisecontrolrb.thoughtworks.com/) built with "Processing":http://processing.org and some other bits.
+
+h2. License
+
+BSD yadda yadda yadda if you use this on commercial products, mention me and let me know, yadda yadda yadda, otherwise sky daddy kills a kitten, yadda yadda yadda.
+
+h2. oldschool_with_arduino: retro style
+
+This information radiator uses an oldschool CRT-like font to display the build number and message, plus any check-in comments and modified files, in full-screen. When the build status changes, it will also play either @success.mp3@ or @failure.mp3@, located in the @data/@ directory.
+
+If an "Arduino":http://arduino.cc using the "Standard Firmata":http://www.arduino.cc/playground/Interfacing/Firmata firmware is connected to a USB port, it will set (actually, pulse-width modulate 100%) pin 9 to HIGH when the build is successful and pin 11 to HIGH when it is failing.
+
+You'll need a few external libraries installed into your Processing environment:
+
+* Minim: http://code.compartmental.net/tools/minim/
+* FullScreen: http://www.superduper.org/processing/fullscreen_api/
+* Arduino: http://www.arduino.cc/playground/Interfacing/Processing
+
+Install them and restart Processing to be able to compile and export the application, or if you don't need to customize anything (doubtful, since the RSS URL is hardcoded to localhost, port 3333 :)) you can run the application directly from the appropriate location for your platform (@application.linux/oldschool_with_arduino@, etc)
+
+
+
+
+h4. Authors
+
+* "Carlos Villela":mailto:cv@lixo.org
+* Thanks to George Malamidis, Danilo Sato and Dan Bodard for ideas, suggestions and feedback.
+
+
