@@ -1,0 +1,13 @@
+h1. Build Monitors for Cruise using Quartz Composer
+
+h3. Build Monitor Template.qtz
+
+This is a bare-bones build monitor that's already useful out of the box. It displays all projects listed in the XML with a coloured status indicator next to them. It reads the same XML feeds as CCMenu, CCTray etc. Make sure you use those instead of the RSS feed in this case.
+
+You may want to use this template as a starting point for new screen savers and build radiators.
+
+h3. NES Cube.qtz
+
+Uses an old-school NES font to display the RSS feed for a project (currently only looks nice with CruiseControl.rb + git feeds). It's badly put together at the moment and only works for one project. Let me know if you want to use it and I'll get it fixed / made more generic.
+
+You'll need the "Press Start K font":http://www.zone38.net/font/#pressstart.
