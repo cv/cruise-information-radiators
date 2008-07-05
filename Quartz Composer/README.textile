@@ -6,6 +6,9 @@ This is a bare-bones build monitor that's already useful out of the box. It disp
 
 You may want to use this template as a starting point for new screen savers and build radiators.
 
+In order to use it as a screen saver, all you have to do is copy it over to /Library/Screen Savers, and it should show up in your Desktop and Screen Saver preference pane. Make sure you set the correct XML feed URL in the Options dialog.
+
+
 h3. NES Cube.qtz
 
 Uses an old-school NES font to display the RSS feed for a project (currently only looks nice with CruiseControl.rb + git feeds). It's badly put together at the moment and only works for one project. Let me know if you want to use it and I'll get it fixed / made more generic.
