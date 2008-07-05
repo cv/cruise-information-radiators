@@ -1,0 +1,7 @@
+task :default do
+  
+  cp 'Build Monitor Template.qtz', '/Developer/Library/Quartz Composer/Templates/'
+  cp 'Simple.qtz', '/Library/Screen Savers/'
+  cp 'NES Cube.qtz', '/Library/Screen Savers/'
+  
+end
