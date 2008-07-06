@@ -1,7 +1,14 @@
+TEMPLATES_DIR = '/Developer/Library/Quartz Composer/Templates/'
+SCREEN_SAVERS_DIR = '/Library/Screen Savers/'
+
 task :default do
+  cp 'Build Monitor Template.qtz', TEMPLATES_DIR
   
-  cp 'Build Monitor Template.qtz', '/Developer/Library/Quartz Composer/Templates/'
-  cp 'Simple.qtz', '/Library/Screen Savers/'
-  cp 'NES Cube.qtz', '/Library/Screen Savers/'
-  
+  [
+    'Simple.qtz', 
+    'Simple 2.qtz', 
+    'NES Cube.qtz'
+  ].each {|screen_saver|
+    cp screen_saver, SCREEN_SAVERS_DIR
+  }
 end
